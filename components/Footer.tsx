@@ -1,4 +1,5 @@
 import { socialMedia } from '@/data'
+import Image from 'next/image'
 import React from 'react'
 import { FaLocationArrow } from 'react-icons/fa'
 import Magicbuttons from './MagicButtons'
@@ -11,7 +12,7 @@ const Footer = () => {
                     Ready to take <span className='text-purple'>Your Digital presence  </span> to the next level?
                 </h1>
                 <p className="text-white-200 md:mt-10 my-5 text-center">
-                    Reach out to me today and let's connect
+                    Reach out to me today and let&apos connect
                 </p>
                 <a href='https://www.linkedin.com/in/dhrub-das-877659248/'>
                     <Magicbuttons
@@ -31,7 +32,7 @@ const Footer = () => {
                             key={info.id}
                             className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
                         >
-                            <img src={info.img} alt="icons" width={20} height={20} />
+                            <Image src={info.img} alt="icons" width={20} height={20} />
                         </a>
                     ))}
                 </div>

@@ -23,13 +23,13 @@ const Hero = () => {
             <div className='flex ml-4 md:ml-8 lg:ml-12  relative my-24 z-10 justify-around'>
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center ">
                     <h2 className='uppercase tracking-widest text-xs  text-left text-blue-100 max-w-80 mb-5'>Hello There, Welcome to my Site</h2>
-                    <h2 className='uppercase tracking-widest text-4xl lg:text-4xl font-semibold text-left text-blue-100 mt-2'>I'm Dhrub Das</h2>
+                    <h2 className='uppercase tracking-widest text-4xl lg:text-4xl font-semibold text-left text-blue-100 mt-2'>I&apos;m Dhrub Das</h2>
                     <TextGenerateEffect
                         className='text-left'
                         // size change karna h toh testgenerate ke component mai jaake hoga //
                         words="A FrontEnd Developer"
                     />
-                    <p className='text-left lg:text-widest text-lg mt-4 mb-8 md:text-lg lg:text-2xl '>Here are some of my works...</p>
+                    <p className='text-left lg:text-widest text-lg mt-4 mb-8 md:text-lg lg:text-2xl'>Here are some of my works...</p>
                     <Link href='#projects'><Magicbuttons
                         title='Show my Work'
                         icon={<FaLocationArrow />}
@@ -39,7 +39,6 @@ const Hero = () => {
                 <div className='hidden md:block'>
                     <Image
                         src={profpic}
-                        height={350}
                         alt="Picture of the author"
                         className='rounded-full'
                     />

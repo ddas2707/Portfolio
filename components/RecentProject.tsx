@@ -1,4 +1,5 @@
 import { projects } from '@/data'
+import Image from 'next/image'
 import React from 'react'
 import { FaLocationArrow } from 'react-icons/fa'
 import { PinContainer } from './ui/3d-pin'
@@ -22,9 +23,15 @@ const RecentProject = () => {
                                         className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                                         style={{ backgroundColor: "#13162D" }}
                                     >
-                                        <img src="/bg.png" alt="bgimg" />
+                                        <Image
+                                            height={100}
+                                            width={100}
+                                            src="/bg.png"
+                                            alt="bgimg" />
                                     </div>
-                                    <img
+                                    <Image
+                                        height={200}
+                                        width={500}
                                         src={item.img}
                                         alt="cover"
                                         className="z-10 absolute bottom-0"
@@ -57,7 +64,7 @@ const RecentProject = () => {
                                                 }}
                                             // overlap styling end
                                             >
-                                                <img src={icon} alt="icon5" className="p-2" />
+                                                <Image height={100} width={100} src={icon} alt="icon5" className="p-2" />
                                             </div>
                                         ))}
                                     </div>
